@@ -1,0 +1,170 @@
+{
+	"apiVersion": "1",
+	"name": "ytvgb/gallery",
+	"title": "Video Gallery For YouTube",
+	"description": "You can display YouTube channel and playlist videos on your website",
+	"category": "widgets",
+	"keywords": [
+		"block",
+		"youtube",
+		"gallery"
+	],
+	"textdomain": "ytvgb",
+	"attributes": {
+		"align": {
+			"type": "string",
+			"default": "wide"
+		},
+		"cId": {
+			"type": "string",
+			"default": ""
+		},
+		"configure": {
+			"type": "object",
+			"default": {
+				"id": "UCMmfX-LfJSgW_PvWCOFXUew",
+				"perPage": 12,
+				"orderBy": "date",
+				"resource": "channel"
+			}
+		},
+		"layout": {
+			"type": "string",
+			"default": "default"
+		},
+		"columns": {
+			"type": "object",
+			"default": {
+				"desktop": 3,
+				"tablet": 2,
+				"mobile": 1
+			}
+		},
+		"columnGap": {
+			"type": "string",
+			"default": "30px"
+		},
+		"rowGap": {
+			"type": "string",
+			"default": "40px"
+		},
+		"player": {
+			"type": "object",
+			"default": {
+				"height": 350,
+				"controls": true,
+				"mute": true,
+				"rel": true,
+				"autoPlay": true,
+				"modestBranding": true,
+				"annotation": true,
+				"fs": false
+			}
+		},
+		"img": {
+			"type": "object",
+			"default": {
+				"bRadius": "3px"
+			}
+		},
+		"title": {
+			"type": "object",
+			"default": {
+				"show": true,
+				"limit": 50,
+				"isLink": true,
+				"target": true
+			}
+		},
+		"desc": {
+			"type": "object",
+			"default": {
+				"show": false,
+				"limit": 100
+			}
+		},
+		"titleTypo": {
+			"type": "object",
+			"default": {
+				"fontSize": {
+					"desktop": 18,
+					"tablet": 15,
+					"mobile": 15
+				},
+				"fontWeight": 500,
+				"lineHeight": "135%"
+			}
+		},
+		"titleColor": {
+			"type": "string",
+			"default": "#000"
+		},
+		"descTypo": {
+			"type": "object",
+			"default": {
+				"fontSize": {
+					"desktop": 14,
+					"tablet": 15,
+					"mobile": 15
+				},
+				"fontWeight": 400,
+				"lineHeight": "135%"
+			}
+		},
+		"descColor": {
+			"type": "string",
+			"default": "#000000bf"
+		},
+		"info": {
+			"type": "object",
+			"default": {
+				"show": false,
+				"isView": true,
+				"isLike": false,
+				"isComment": false,
+				"isPDate": true,
+				"numberSize": 13,
+				"numberColor": "#000",
+				"iconSize": 15,
+				"iconColor": "#000"
+			}
+		},
+		"boxPadding": {
+			"type": "object",
+			"default": {
+				"top": "0px",
+				"right": "0px",
+				"bottom": "0px",
+				"left": "0px"
+			}
+		},
+		"boxBorder": {
+			"type": "object",
+			"default": {
+				"width": "1px",
+				"style": "solid",
+				"color": "#0000",
+				"side": "all",
+				"radius": "3px"
+			}
+		}
+	},
+	"supports": {
+		"align": [
+			"wide",
+			"full"
+		],
+		"html": false
+	},
+	"example": {
+		"attributes": {
+			"preview": true,
+			"columns": {
+				"desktop": 1,
+				"tablet": 1,
+				"mobile": 1
+			}
+		}
+	},
+	"editorScript": "file:dist/editor.js"
+}
